@@ -1,0 +1,112 @@
+html{
+  background-color: #B26700;
+
+}
+body{
+  margin: 0;
+}
+body::-webkit-scrollbar{
+  width: 0.5vw;
+}
+
+body::-webkit-scrollbar-track {
+   -webkit-box-shadow: inset 0 0 4px white;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border-top-left-radius: 50%;
+  border-radius: 10%;
+
+}
+.nav{
+  position: fixed;
+  width: 100%;
+  border: 1px solid rgba(0, 114, 181,0.8);
+  border-radius: 10%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background-color:  lightgray;
+}
+.nav-wrapper{
+  display: grid;
+  position: relative;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 100%;
+}
+.nav-wrapper ul li{
+  display: inline-block;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-wrapper ul li a{
+  margin-right: 2vw;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.5s ease;
+
+}
+.nav-wrapper ul li a:hover{
+  color: red;
+}
+
+
+#nameText{
+  margin-left: 5%;
+  margin-top: 1vh;
+  list-style-type: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: red;
+  font-size: 2vw;
+
+}
+
+.header{
+  display: grid;
+  width: 100%;
+  grid-template-columns:60% 40%;
+  grid-template-rows: 100%;
+
+}
+#display-image{
+  background:linear-gradient( to right,
+      rgba(128,128,128,0.7),
+      rgba(128,128,128, 0.8),
+      rgba(128,128,128,0.9)
+    ), url(../images/kojo.jpg)center center;
+  background-size: cover;
+  padding-top: 40%;
+  padding-bottom: 39%;
+}
+.header-text{
+  text-align: center;
+  padding-top:30%;
+  background-color: lightgray;
+}
+
+.header-text h2{
+  font-size: 5vw;
+  /*font-family: 'Luckiest Guy', cursive;*/
+  letter-spacing: 10px;
+  color: red;
+  text-shadow: 9px 13px  10px black;
+}
+.header-text h4{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 5px;
+  color: white;
+  font-size: 1.5vw;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.header-text .highlight{
+  color:red;
+  font-weight: bold;
+  font-style: italic;
+}
+.about{
+  display: grid;
+  grid-template-columns:100%;
+  grid-template-rows: 100% 100% 100%;
+
+}
